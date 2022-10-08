@@ -29,7 +29,7 @@ code[class*='language-'] {
   @apply font-mono !important;
 }
 
-.player {
+:root {
   --plyr-font-size-small: 20px;
   --plyr-font-size-base: 24px;
   --plyr-font-size-large: 28px;
