@@ -55,6 +55,10 @@ module.exports = {
       name: 'Telegram',
       link: 'https://t.me/s/One_Anime_CH',
     },
+    {
+      name: 'GitHub',
+      link: 'https://github.com/LongStudy/One-Anime-Wiki',
+    },
   ],
 
   // This is a day.js-style datetime format string to format datetimes in the app. Ref to
