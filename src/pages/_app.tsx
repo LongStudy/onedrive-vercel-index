@@ -124,7 +124,6 @@ library.add(
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      // script for Google Analytics begin
       <Script
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-LYBC7VSGKX`}
@@ -138,7 +137,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', 'G-LYBC7VSGKX');
         `}
       </Script>
-      // script for Google Analytics end
       <NextNProgress height={1} color="rgb(156, 163, 175, 0.9)" options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </>
