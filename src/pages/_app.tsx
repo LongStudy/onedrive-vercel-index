@@ -125,10 +125,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Script
+        id="analytics-script-1"
         strategy="lazyOnload"
         src={`https://www.googletagmanager.com/gtag/js?id=G-LYBC7VSGKX`}
       />
-      <Script strategy="lazyOnload">
+      <Script id="analytics-script-2" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
