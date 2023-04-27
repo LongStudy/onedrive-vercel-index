@@ -137,7 +137,6 @@ function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', 'G-LYBC7VSGKX');
         `}
       </Script>
-      <script id="adsense-script-1" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5703743204316321" crossOrigin="anonymous"></script>
       <NextNProgress height={1} color="rgb(156, 163, 175, 0.9)" options={{ showSpinner: false }} />
       <Component {...pageProps} />
     </>
