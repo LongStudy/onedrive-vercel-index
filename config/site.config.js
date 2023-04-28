@@ -57,7 +57,7 @@ module.exports = {
     },
     {
       name: 'GitHub',
-      link: 'https://github.com/LongStudy/One-Anime-Wiki',
+      link: 'https://github.com/Syntax258/One-Anime-Wiki',
     },
   ],
 
