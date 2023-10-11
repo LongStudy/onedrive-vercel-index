@@ -35,7 +35,3 @@ code[class*='language-'] {
   --plyr-font-size-large: 28px;
   --plyr-font-size-xlarge: 36px;
 }
-
-.md\:w-48 {
-  width: 24rem;
-}
