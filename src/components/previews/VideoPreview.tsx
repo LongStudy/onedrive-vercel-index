@@ -170,9 +170,9 @@ const VideoPreview: FC<{ file: OdFileObject }> = ({ file }) => {
             btnImage="/players/nplayer.png"
           />
           <DownloadButton
-            onClickCallback={() => window.open(`ddplay:${getBaseUrl()}${videoUrl}`)}
+            onClickCallback={() => window.open(`ddplay:${getBaseUrl()}${videoUrl}|filePath=${asPath}`)}
             btnText="弹弹play"
-            btnImage="/players/nplayer.png"
+            btnImage="/players/ddplay.png"
           />
         </div>
       </DownloadBtnContainer>
