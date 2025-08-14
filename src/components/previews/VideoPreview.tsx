@@ -38,7 +38,6 @@ const VideoPlayer: FC<{
       .get(subtitle, { responseType: 'blob' })
       .then(resp => {
         const track = document.querySelector('track')
-        if (track) {
         track?.setAttribute('src', URL.createObjectURL(resp.data))
       })
       .catch(() => {
