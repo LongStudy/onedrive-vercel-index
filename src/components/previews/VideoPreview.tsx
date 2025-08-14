@@ -38,8 +38,15 @@ const VideoPlayer: FC<{
       .get(subtitle, { responseType: 'blob' })
       .then(resp => {
         const track = document.querySelector('track')
-        track?.setAttribute('src', URL.createObjectURL(resp.data))
-      })
+        if (track) {
+        track.setAttribute('src', URL.createObjectURL(resp.data))
+        // 自动开启字幕展示
+        setTimeout(() => {
+          const pl = (document.querySelector('.plyr') as any)?.plyr
+          pl?.toggleCaptions(true)
+        }, 1000)
+      }
+    })
       .catch(() => {
         console.log('Could not load subtitle.')
       })
