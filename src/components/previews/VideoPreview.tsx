@@ -39,14 +39,8 @@ const VideoPlayer: FC<{
       .then(resp => {
         const track = document.querySelector('track')
         if (track) {
-        track.setAttribute('src', URL.createObjectURL(resp.data))
-        // 自动开启字幕展示
-        setTimeout(() => {
-          const pl = (document.querySelector('.plyr') as any)?.plyr
-          pl?.toggleCaptions(true)
-        }, 1000)
-      }
-    })
+        track?.setAttribute('src', URL.createObjectURL(resp.data))
+      })
       .catch(() => {
         console.log('Could not load subtitle.')
       })
@@ -73,10 +67,6 @@ const VideoPlayer: FC<{
   const plyrOptions: Plyr.Options = {
     ratio: `${width ?? 16}:${height ?? 9}`,
     fullscreen: { iosNative: true },
-    captions: {
-      active: true,
-      update: true,
-    },
   }
   if (!isFlv) {
     // If the video is not in flv format, we can use the native plyr and add sources directly with the video URL
