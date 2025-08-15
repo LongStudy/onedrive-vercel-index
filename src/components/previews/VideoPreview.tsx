@@ -38,7 +38,7 @@ const VideoPlayer: FC<{
       .get(subtitle, { responseType: 'blob' })
       .then(resp => {
         const track = document.querySelector('track')
-        track?.setAttribute('', URL.createObjectURL(resp.data))
+        track?.setAttribute('src', URL.createObjectURL(resp.data))
       })
       .catch(() => {
         console.log('Could not load subtitle.')
