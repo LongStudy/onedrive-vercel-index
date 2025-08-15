@@ -39,6 +39,7 @@ const VideoPlayer: FC<{
       .then(resp => {
         const track = document.querySelector('track')
         track?.setAttribute('src', URL.createObjectURL(resp.data))
+        track?.setAttribute('srclang', 'zh')
       })
       .catch(() => {
         console.log('Could not load subtitle.')
