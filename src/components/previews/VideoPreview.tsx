@@ -38,7 +38,7 @@ const VideoPlayer: FC<{
       .get(subtitle, { responseType: 'blob' })
       .then(resp => {
         const track = document.querySelector('track')
-        track?.setAttribute('src', URL.createObjectURL(resp.data))
+        track?.setAttribute('', URL.createObjectURL(resp.data))
       })
       .catch(() => {
         console.log('Could not load subtitle.')
@@ -61,7 +61,7 @@ const VideoPlayer: FC<{
     type: 'video',
     title: videoName,
     poster: thumbnail,
-    tracks: [{ kind: 'captions', label: videoName, src: '', srclang='zh', default: true }],
+    tracks: [{ kind: 'captions', label: videoName, src: '', srclang: 'zh', default: true }],
   }
   const plyrOptions: Plyr.Options = {
     ratio: `${width ?? 16}:${height ?? 9}`,
