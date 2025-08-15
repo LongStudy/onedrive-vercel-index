@@ -68,6 +68,7 @@ const VideoPlayer: FC<{
     fullscreen: { iosNative: true },
     captions: {
       active: true,
+      language: 'zh',
       update: true,
     },
   }
