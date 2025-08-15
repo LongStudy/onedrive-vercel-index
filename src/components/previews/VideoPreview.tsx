@@ -62,6 +62,7 @@ const VideoPlayer: FC<{
     type: 'video',
     title: videoName,
     poster: thumbnail,
+    sources: [],
     tracks: [{ kind: 'captions', label: videoName, src: '', default: true, srclang: 'zh' }],
   }
   const plyrOptions: Plyr.Options = {
